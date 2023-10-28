@@ -1,0 +1,77 @@
+* {
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+}
+
+@font-face {
+    font-family: Photography;
+    src: url(Photography.otf);
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+head {
+    display: none;
+}
+
+#container {
+    height: 100vmax;
+    width: 100vmax;
+}
+
+#pic {
+    background-image: url("img/bgpic.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#logobar {
+    position: relative;
+    top: 150px;
+    background-color: rgba(0, 0, 0, 0.397);
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#logobar p {
+    font-family: Photography;
+    font-size: 10vmax;
+    margin: 0;
+    margin-bottom: 1.5vmax;
+}
+
+
+#logo {
+    height: 7vmax;
+    margin: 5px;
+    filter: invert(100%) sepia(0%) saturate(7477%) hue-rotate(94deg) brightness(99%) contrast(102%);
+}
+
+#credit {
+    flex-direction: column;
+}
+
+#credit p {
+    margin: 0;
+    color: white;
+    justify-content: center;
+}
+
+#credit p:last-child {
+    margin-bottom: 10px;    
+}
+
+#credit a {
+    color: white;
+}
+
+#content {
+    background-color: blue;
+    flex-grow: 2.9;
+}

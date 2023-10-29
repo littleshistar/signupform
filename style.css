@@ -1,5 +1,6 @@
 * {
     display: flex;
+    flex-direction: column;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -17,33 +18,41 @@ head {
     display: none;
 }
 
+p {
+    display: inline;
+}
+
 #container {
-    height: 100vmax;
+    display: flex;
+    height: 100vh;
     width: 100vmax;
+    flex-direction: row;
 }
 
 #pic {
     background-image: url("img/bgpic.jpg");
     background-size: cover;
     flex-grow: 1;
-    flex-direction: column;
     justify-content: space-between;
 }
 
 #logobar {
+    display: flex;
     position: relative;
     top: 150px;
     background-color: rgba(0, 0, 0, 0.397);
     color: white;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
-#logobar p {
+#logobar h1 {
     font-family: Photography;
     font-size: 10vmax;
     margin: 0;
     margin-bottom: 1.5vmax;
+    font-weight: 500;
 }
 
 
@@ -54,7 +63,7 @@ head {
 }
 
 #credit {
-    flex-direction: column;
+    align-items: center;
 }
 
 #credit p {
@@ -72,6 +81,57 @@ head {
 }
 
 #content {
-    background-color: blue;
-    flex-grow: 2.9;
+    background-color: #f8f6f5;
+    flex-grow: 3;
+    justify-content: center;
+}
+
+h2 {
+    color: #557022;
+}
+
+.wrapper {
+    padding: 20px 40px;
+}
+
+h3 {
+    margin: 0;
+}
+
+#formbox {
+    background-color: white;
+    filter: drop-shadow(0px 5px 2px #dad5d1);
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+#formbox h3 {
+    margin: 10px 40px;
+    font-weight: 600;
+}
+
+form div {
+    flex-direction: row;
+}
+
+form div label {
+    margin: 5px 40px;
+    font-size: 12px;
+}
+
+button {
+    background-color: #557022;
+    border: none;
+    border-radius: 5px;
+    filter: drop-shadow(0px 5px 2px #dad5d1);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 35px;
+    max-width: fit-content;
+}
+
+.wrapper a {
+    color: #557022;
+    font-weight: bold;
 }

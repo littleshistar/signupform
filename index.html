@@ -8,7 +8,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
       </style>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <script defer src="script.js" ></script>
 
     <title>Sign Up</title>
 </head>
@@ -20,16 +20,15 @@
                 <h1>Fortin</h1>
             </div>
             <div id="credit">
-                    <p>Logo by&nbsp<a href="http://www.freepik.com/">Freepik</a></p>
-                    <p>Image by&nbsp<a href="https://unsplash.com/@idbronskiy">Ilia Bronskiy</a>&nbspon&nbsp<a href="https://unsplash.com/photos/a-lush-green-hillside-covered-in-lots-of-green-grass-o3RX3z-doD0">Unsplash</a></p>
+                    <p>Logo by <a href="http://www.freepik.com/">Freepik</a></p>
+                    <p>Image by <a href="https://unsplash.com/@idbronskiy">Ilia Bronskiy</a> on <a href="https://unsplash.com/photos/a-lush-green-hillside-covered-in-lots-of-green-grass-o3RX3z-doD0">Unsplash</a></p>
                     
             </div>
         </div>
         <div id="content">
             <div class="wrapper">
                 <h2>This is not a real online service!</h2>
-                <h3>Sign up now and don't miss out on anything ever again.</h3>
-                <h3>You &nbsp<i>know</i>&nbsp you want to.</h3>
+                <h3>Sign up now and don't miss out on anything ever again.<br>You <i>know</i> you want to.</h3>
             </div>
 
             <div id="formbox">
@@ -46,27 +45,29 @@
                     </div>
                     <div>
                         <label for="Email">
-                            EMAIL <input type="text" name="first_name"/>
+                            EMAIL <input type="email" name="first_name"/>
                         </label>
 
                         <label for="Phone number">
-                            PHONE NUMBER <input type="text" name="first_name"/>
+                            PHONE NUMBER <input type="tel" name="first_name"/>
                         </label>
                     </div>
                     <div>
                         <label for="Password">
-                            PASSWORD <input type="text" name="first_name"/>
+                            PASSWORD <input type="password" name="first_name" id="pass1"/>
+                            <p id="pass1_message"></p>
                         </label>
 
                         <label for="Confirm password">
-                            CONFIRM PASSWORD <input type="text" name="first_name"/>
+                            CONFIRM PASSWORD <input type="password" name="first_name" id="pass2"/>
+                            <p id="pass2_message"></p>
                         </label>
                     </div>
                 </form>
             </div>
             
             <div class="wrapper">
-                <button>Create Account</button>
+                <button type="submit">Create Account</button>
 
                 <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D">Log in</a></p>
             </div>

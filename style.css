@@ -1,6 +1,4 @@
 * {
-    display: flex;
-    flex-direction: column;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -14,14 +12,6 @@ body {
     overflow: hidden;
 }
 
-head {
-    display: none;
-}
-
-p {
-    display: inline;
-}
-
 #container {
     display: flex;
     height: 100vh;
@@ -30,6 +20,8 @@ p {
 }
 
 #pic {
+    display: flex;
+    flex-direction: column;
     background-image: url("img/bgpic.jpg");
     background-size: cover;
     flex-grow: 1;
@@ -63,17 +55,16 @@ p {
 }
 
 #credit {
-    align-items: center;
+    text-align: center;
 }
 
 #credit p {
     margin: 0;
     color: white;
-    justify-content: center;
 }
 
 #credit p:last-child {
-    margin-bottom: 10px;    
+    margin-bottom: 10px;  
 }
 
 #credit a {
@@ -81,6 +72,8 @@ p {
 }
 
 #content {
+    display: flex;
+    flex-direction: column;
     background-color: #f8f6f5;
     flex-grow: 3;
     justify-content: center;
@@ -100,23 +93,62 @@ h3 {
 
 #formbox {
     background-color: white;
-    filter: drop-shadow(0px 5px 2px #dad5d1);
+    filter: drop-shadow(2px 2px 2px #dad5d1);
     padding-top: 15px;
     padding-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 #formbox h3 {
     margin: 10px 40px;
     font-weight: 600;
+    color: #3c4042;
 }
 
 form div {
+    display: flex;
     flex-direction: row;
 }
 
 form div label {
+    display: flex;
+    flex-direction: column;
     margin: 5px 40px;
     font-size: 12px;
+    color: #3c4042;
+}
+
+input {
+    border-radius: 5px;
+    border: solid 1px #3c4042;
+    padding: 5px;
+}
+
+input:focus {
+    outline: solid 1.5px #557022;
+    background-color: #f8f6f5;
+    filter: drop-shadow(0px 5px 2px #dad5d1)
+}
+
+input:invalid {
+    outline: solid 1.5px #ec1e10;
+    background-color: #f5c6b8;   
+}
+
+#pass1_message, #pass2_message {
+    margin: 0;
+}
+
+.error {
+    border: solid 1px #ec1e10;
+    background-color: #f5c6b8;
+    color: #ec1e10;
+}
+
+.good {
+    border: solid 1px #7ec251;
+    background-color: #e0fcc7;
+    color: #7ec251;
 }
 
 button {
@@ -134,4 +166,6 @@ button {
 .wrapper a {
     color: #557022;
     font-weight: bold;
+    text-decoration: none;
+    max-width: fit-content;
 }
